@@ -1,0 +1,48 @@
+{
+  "name": "cpsit/persons-example",
+  "type": "typo3-cms-extension",
+  "description": "Example data for the persons development bundle project",
+  "authors": [
+    {
+      "name": "Dirk Wenzel",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "Person"
+  ],
+  "homepage": "https://github.com/CPS-IT/persons_example",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^9.5",
+    "typo3/cms-extbase": "^9.5",
+    "cpsit/persons": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CPSIT\\PersonsExample\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CPSIT\\PersonsExample\\Tests\\": "Tests"
+    }
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
