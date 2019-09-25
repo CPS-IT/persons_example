@@ -14,7 +14,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Persons Example Data',
     'description' => 'Example data for the persons development bundle project',
-    'category' => 'plugin',
+    'category' => 'distribution',
     'author' => 'Dirk Wenzel',
     'author_email' => 'wenzel@cps-it.de',
     'state' => 'beta',
